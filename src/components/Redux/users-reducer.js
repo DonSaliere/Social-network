@@ -4,11 +4,7 @@ const SET_USERS = 'SET_USERS'
 
 
 let initialState = {
-    users: [
-        { id: 1, photoUrl: 'http://gloria-mur.ru/wp-content/uploads/2017/05/avatar1-740x463.jpg' ,followed: false, fullName: 'Dmitry', status: 'I am boss', location: { city: 'Kaluga', country: 'Russia' } },
-        { id: 2, photoUrl: 'http://gloria-mur.ru/wp-content/uploads/2017/05/avatar1-740x463.jpg' ,followed: true, fullName: 'Dmitry', status: 'I am boss', location: { city: 'Kaluga', country: 'Russia' } },
-        { id: 3, photoUrl: 'http://gloria-mur.ru/wp-content/uploads/2017/05/avatar1-740x463.jpg' ,followed: false, fullName: 'Dmitry', status: 'I am boss', location: { city: 'Kaluga', country: 'Russia' } }
-    ]
+    users: []
 };
 
 const usersReducer = (state = initialState, action) => {
