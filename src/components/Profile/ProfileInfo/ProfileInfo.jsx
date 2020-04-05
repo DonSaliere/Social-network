@@ -11,12 +11,12 @@ const ProfileInfo = (props) => {
 
   return (
     <div>
-      {/*<div>
+      {/* <div>
         <img className={s.img} src='https://s1.best-wallpaper.net/wallpaper/m/1110/Beautiful-dream-beach_m.jpg'></img>
-      </div>*/}
+      </div> */}
       <div className={s.descriptionBlock}>
         <img src={props.profile.photos.large}/>     
-        <ProfileStatus status ={"TEST"}/>
+        <ProfileStatus status ={props.status} updateStatus={props.updateStatus}/>
       </div>
       <div className={s.descriptionBlock}>{props.profile.contacts.vk}</div>
     </div>
